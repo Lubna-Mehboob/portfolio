@@ -42,9 +42,9 @@ class MainDesktop extends StatelessWidget {
               ),
             ],
           ),
-          Image.asset(
-            'lib/assets/images/pinpng.PNG',
-            width: screenWidth / 2,
+          const CircleAvatar(
+            radius: 130,
+            backgroundImage: AssetImage('lib/assets/images/pinpng.PNG'),
           ),
         ],
       ),

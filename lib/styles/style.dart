@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/Constants/colors.dart';
+//import 'package:my_portfolio/Constants/colors.dart';
 
 BoxDecoration kHeaderDecoration = BoxDecoration(
   gradient: const LinearGradient(
     colors: [
-      Colors.transparent,
-      CustomColor.bgLight1,
+      Color(0xFF1E1E2C), // Dark Slate Blue
+      Color(0xFF3B3B58), // Steel Gray with Blue tint
     ],
   ),
   borderRadius: BorderRadius.circular(100),
