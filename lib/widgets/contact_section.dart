@@ -34,13 +34,13 @@ class ContactSection extends StatelessWidget {
             }),
           ),
           const SizedBox(
-            height: 15,
+            height: 10,
           ),
           ConstrainedBox(
             constraints: BoxConstraints(maxWidth: 700),
             child: const CustomTextfield(
               hintText: 'Your message',
-              maxLine: 20,
+              maxLine: 10,
             ),
           ),
           const SizedBox(

@@ -31,13 +31,12 @@ List<ProjectUtils> myProjects = [
 ];
 List<ProjectUtils> hobbyProjects = [
   ProjectUtils(
-      image: 'lib/assets/images/pinpng.PNG',
+      image: 'lib/assets/images/timer.PNG',
       title: 'CountDown Timer App',
-      subtitle:
-          'This ToDo app is built using the MVC architecture, featuring a splash screen, login, and signup pages. It allows users to add, edit, and delete tasks with an intuitive interface.',
-      webLink: 'https://github.com/Lubna-Mehboob/counter.git'),
+      subtitle: 'A simple beginner level countdown timer app.',
+      webLink: 'https://github.com/Lubna-Mehboob/Countdown_Timer.git'),
   ProjectUtils(
-      image: 'lib/assets/images/pinpng.PNG',
+      image: 'lib/assets/images/whtsap.PNG',
       title: 'WhatsApp Clone',
       subtitle:
           'This project showcases a well-organized MVC (Model-View-Controller) architecture designed for a WhatsApp-like application. ',
