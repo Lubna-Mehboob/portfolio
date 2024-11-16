@@ -36,7 +36,7 @@ List<ProjectUtils> hobbyProjects = [
       subtitle: 'A simple beginner level countdown timer app.',
       webLink: 'https://github.com/Lubna-Mehboob/Countdown_Timer.git'),
   ProjectUtils(
-      image: 'lib/assets/images/whtsap.PNG',
+      image: 'lib/assets/images/whts.PNG',
       title: 'WhatsApp Clone',
       subtitle:
           'This project showcases a well-organized MVC (Model-View-Controller) architecture designed for a WhatsApp-like application. ',
