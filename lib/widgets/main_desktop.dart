@@ -37,6 +37,8 @@ class MainDesktop extends StatelessWidget {
                 width: 200,
                 child: ElevatedButton(
                   onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: CustomColor.yellowSecondary),
                   child: const Text('Get in touch'),
                 ),
               ),

@@ -17,7 +17,7 @@ class ProjectUtils {
 
 List<ProjectUtils> myProjects = [
   ProjectUtils(
-      image: 'lib/assets/images/todo.PNG',
+      image: 'lib/assets/images/todoo.jpg',
       title: 'A simple Todo App',
       subtitle:
           'This ToDo app is built using the MVC architecture, featuring a splash screen, login, and signup pages. It allows users to add, edit, and delete tasks with an intuitive interface.',
