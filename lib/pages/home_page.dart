@@ -2,16 +2,24 @@ import 'package:flutter/material.dart';
 //import 'package:flutter/rendering.dart';
 import 'package:my_portfolio/Constants/colors.dart';
 import 'package:my_portfolio/Constants/screen_size.dart';
-import 'package:my_portfolio/Constants/skill_items.dart';
+import 'package:my_portfolio/widgets/contact_section.dart';
+import 'package:my_portfolio/widgets/custom_textfield.dart';
+//import 'package:my_portfolio/Constants/skill_items.dart';
+//import 'package:my_portfolio/utils/project_utils.dart';
 //import 'package:my_portfolio/Constants/navbar_items.dart';
 import 'package:my_portfolio/widgets/drawer_mobile.dart';
+import 'package:my_portfolio/widgets/footer.dart';
 import 'package:my_portfolio/widgets/header_desktop.dart';
 //import 'package:my_portfolio/styles/style.dart';
 //import 'package:my_portfolio/Constants/navbar_items.dart';
 
 import 'package:my_portfolio/widgets/header_mobile.dart';
 import 'package:my_portfolio/widgets/main_desktop.dart';
+//import 'package:my_portfolio/widgets/project_cards.dart';
+import 'package:my_portfolio/widgets/project_section.dart';
 import 'package:my_portfolio/widgets/skills_desktop.dart';
+import 'package:my_portfolio/widgets/skills_mobile.dart';
+//import 'package:my_portfolio/widgets/skills_desktop.dart';
 //import 'package:my_portfolio/widgets/site_logo.dart';
 
 class HomePage extends StatefulWidget {
@@ -78,74 +86,30 @@ class _HomePageState extends State<HomePage> {
                     height: 30,
                   ),
                   //Platform and Skills--------Desktop----View-------------
-                  //SkillsDesktop(),
-                  Column(
-                    children: [
-                      for (int i = 0; i < platformItems.length; i++)
-                        //Platfor---mobile------
-                        Container(
-                          margin: EdgeInsets.only(bottom: 5),
-                          width: double.maxFinite,
-                          decoration: BoxDecoration(
-                            color: CustomColor.bgLight2,
-                            borderRadius: BorderRadius.circular(5),
-                          ),
-                          child: ListTile(
-                            contentPadding: const EdgeInsets.symmetric(
-                              vertical: 10,
-                              horizontal: 20,
-                            ),
-                            leading: Image.asset(
-                              platformItems[i]['img'],
-                              width: 26,
-                            ),
-                            title: Text(platformItems[i]['items']),
-                          ),
-                        ),
-                      const SizedBox(
-                        height: 50,
-                      ),
-
-                      //skills------mobile-----------
-
-                      Wrap(
-                        spacing: 10,
-                        runSpacing: 10,
-                        alignment: WrapAlignment.center,
-                        children: [
-                          for (int i = 0; i < skillItems.length; i++)
-                            Chip(
-                              backgroundColor: CustomColor.bgLight2,
-                              padding: const EdgeInsets.symmetric(
-                                  vertical: 12, horizontal: 16),
-                              label: Text(skillItems[i]['title']),
-                              avatar: Image.asset(skillItems[i]['img']),
-                            ),
-                        ],
-                      )
-                    ],
-                  )
+                  //SkillsMobile(),
+                  if (constraints.maxWidth >= kMedDesktopWidth)
+                    const SkillsDesktop()
+                  else
+                    const SkillsMobile(),
                 ],
               ),
             ),
-            //PROJECTS
-            Container(
-              height: 500,
-              width: double.maxFinite,
-              color: Colors.blueGrey,
+            const SizedBox(
+              height: 30,
             ),
-            //CONTACT
-            Container(
-              height: 500,
-              width: double.maxFinite,
-              color: Colors.blueGrey,
+
+            //PROJECTS****--------********-------------
+            const MyProjectSection(),
+            const SizedBox(
+              height: 30,
             ),
-            //FOOTER
-            Container(
-              height: 500,
-              width: double.maxFinite,
-              color: Colors.blueGrey,
-            ),
+
+            //CONTACT****--------********-------------
+            const ContactSection(),
+            const SizedBox(height: 30),
+
+            //FOOTER****--------********-------------
+            const Footer(),
           ],
         ),
       );
