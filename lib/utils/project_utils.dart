@@ -41,4 +41,10 @@ List<ProjectUtils> hobbyProjects = [
       subtitle:
           'This project showcases a well-organized MVC (Model-View-Controller) architecture designed for a WhatsApp-like application. ',
       webLink: 'https://github.com/Lubna-Mehboob/WhatsApp-Architecture.git'),
+  ProjectUtils(
+      image: 'lib/assets/images/fb.PNG',
+      title: 'FaceBook Clone',
+      subtitle:
+          'This repository implements a well-structured MVC (Model-View-Controller) architecture for a Facebook-like app.',
+      webLink: 'https://github.com/Lubna-Mehboob/facebookArchitecture.git'),
 ];
