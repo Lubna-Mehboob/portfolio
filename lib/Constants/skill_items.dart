@@ -23,7 +23,7 @@ const List<Map> skillItems = [
     'title': 'HTML',
   },
   {
-    'img': 'lib/assets/icons/ewhi.png',
+    'img': 'lib/assets/images/excel.png',
     'title': 'Excel',
   },
   {
