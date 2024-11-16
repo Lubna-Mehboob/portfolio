@@ -24,10 +24,10 @@ List<ProjectUtils> myProjects = [
       webLink: 'https://github.com/Lubna-Mehboob/todoApp.git'),
   ProjectUtils(
       image: 'lib/assets/images/pinpng.PNG',
-      title: 'A simple Todo App',
+      title: 'Gold Price Calculator',
       subtitle:
-          'This ToDo app is built using the MVC architecture, featuring a splash screen, login, and signup pages. It allows users to add, edit, and delete tasks with an intuitive interface.',
-      webLink: 'https://github.com/Lubna-Mehboob/todoApp'),
+          'The Beginner\'s Gold Price Calculator App is a simple and user-friendly project designed to help calculate the price of gold in different traditional weight units such as tola, masha, and ratti.',
+      webLink: 'https://github.com/Lubna-Mehboob/GoldCalculator.git'),
 ];
 List<ProjectUtils> hobbyProjects = [
   ProjectUtils(
