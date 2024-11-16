@@ -22,7 +22,10 @@ const List<Map> skillItems = [
     'img': 'lib/assets/icons/html5.png',
     'title': 'HTML',
   },
-  {'img': 'lib/assets/icons/html5.png', 'title': 'HTML'},
+  {
+    'img': 'lib/assets/icons/ewhi.png',
+    'title': 'Excel',
+  },
   {
     'img': 'lib/assets/images/c-.png',
     'title': 'C++',
