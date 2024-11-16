@@ -17,16 +17,16 @@ class ProjectUtils {
 
 List<ProjectUtils> myProjects = [
   ProjectUtils(
-      image: 'lib/assets/images/pinpng.PNG',
+      image: 'lib/assets/images/todo.PNG',
       title: 'A simple Todo App',
       subtitle:
           'This ToDo app is built using the MVC architecture, featuring a splash screen, login, and signup pages. It allows users to add, edit, and delete tasks with an intuitive interface.',
       webLink: 'https://github.com/Lubna-Mehboob/todoApp.git'),
   ProjectUtils(
-      image: 'lib/assets/images/pinpng.PNG',
+      image: 'lib/assets/images/gold.PNG',
       title: 'Gold Price Calculator',
       subtitle:
-          'The Beginner\'s Gold Price Calculator App is a simple and user-friendly project designed to help calculate the price of gold in different traditional weight units such as tola, masha, and ratti.',
+          'The Beginner\'s Gold Price Calculator App is a simple project designed to help calculate the price of gold in different units such as tola, masha, and ratti.',
       webLink: 'https://github.com/Lubna-Mehboob/GoldCalculator.git'),
 ];
 List<ProjectUtils> hobbyProjects = [
