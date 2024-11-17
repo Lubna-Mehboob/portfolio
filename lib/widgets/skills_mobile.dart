@@ -33,9 +33,10 @@ class SkillsMobile extends StatelessWidget {
                         width: 26,
                       )
                     : const SizedBox(),
-                title: platformItems[i]['items'] != null
-                    ? Text(platformItems[i]['items'])
-                    : const Text('No title'),
+                title: platformItems[i]['title'] != null
+                    ? Text(platformItems[i]['title'])
+                    : const SizedBox(),
+                //const Text('Android Dev'),
               ),
             ),
           const SizedBox(

@@ -1,11 +1,11 @@
 const List<Map> platformItems = [
   {
     'img': 'lib/assets/icons/android_icon.png',
-    'title': 'Android Dev',
+    'title': 'Android App Dev',
   },
   {
     'img': 'lib/assets/icons/web_icon.png',
-    'title': 'Web Dev',
+    'title': 'Responsive Web Design',
   },
 ];
 
